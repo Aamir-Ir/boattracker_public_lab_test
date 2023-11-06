@@ -23,9 +23,4 @@ public class Employee {
     public String getDepartment() {
         return this.department;
     }
-
-    public void addBoat(Boat boat){
-        this.boats.add(boat);
-        boat.addUser(this);
-    }
 }
