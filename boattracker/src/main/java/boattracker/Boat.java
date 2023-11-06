@@ -1,7 +1,6 @@
 package boattracker;
 import java.util.ArrayList;
 
-
 public class Boat {
     private String modelNumber;
     private String boatColor;
@@ -10,7 +9,7 @@ public class Boat {
 
     public Boat(String modelNumber){
         this.modelNumber = modelNumber;
-        }
+    }
 
     public String getBoatColor() {
         return boatColor;
@@ -22,10 +21,10 @@ public class Boat {
 
     public void addUser(Employee employee){
         this.users.add(employee);
+        employee.addBoat(this);
     }
-    
+
     public void removeUser(Employee employee){
         this.users.remove(employee);
     }
 }
-    
